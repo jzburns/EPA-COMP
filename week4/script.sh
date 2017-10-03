@@ -13,7 +13,9 @@ fi
 
 cd $2
 
-tar -cvf backup.tar $1/*
-gzip backup.tar
+tarfn="backup-"`date +%F`.tar
+
+tar -cvf $tarfn $1/*
+gzip $tarfn
 
 echo "Backup complete..."
