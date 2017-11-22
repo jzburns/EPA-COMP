@@ -8,4 +8,5 @@
 
 sleep $2
 
+# now kill the process
 pkill loadtest
